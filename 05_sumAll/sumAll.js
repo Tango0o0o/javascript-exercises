@@ -1,4 +1,4 @@
-const sumAll = function(x, y) { // x to be smaller y to be bigger
+const sumAll = function(x, y) { // y to be smaller x to be bigger
     let temp = 0
 
     if (!Number.isInteger(x) || !Number.isInteger(y)) return "ERROR";
@@ -11,7 +11,7 @@ const sumAll = function(x, y) { // x to be smaller y to be bigger
         temp = 0
     };
      
-    for (let index = y; index <= x; index++) {
+    for (let index = y; index < x; index++) {
         temp += index
     }
 
